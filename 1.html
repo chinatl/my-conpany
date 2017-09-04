@@ -1,0 +1,29 @@
+<div>
+    <router-view></router-view>
+    <mt-tabbar v-model="selected" id="tabItem">
+        <router-link to='/tableinfo'>
+            <mt-tab-item id="tab1">
+                保单
+            </mt-tab-item>
+        </router-link>
+
+        <router-link to='/paysearch'>
+            <mt-tab-item id="tab2">
+                理赔
+            </mt-tab-item>
+        </router-link>
+
+        <router-link to='/saveinfo'>
+            <mt-tab-item id="tab3">
+                保全
+            </mt-tab-item>
+        </router-link>
+
+        <router-link to='/foud'>
+            <mt-tab-item id="tab4">
+                基金
+            </mt-tab-item>
+        </router-link>
+    </mt-tabbar>
+
+</div>

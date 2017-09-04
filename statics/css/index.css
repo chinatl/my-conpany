@@ -1,0 +1,106 @@
+ .searchPath {
+     height: 30px;
+ }
+ .searchPath span {
+     display: inline-block;
+     height: 20px;
+     margin-top: 5px;
+     font: normal bold 14px '';
+     line-height: 20px;
+     padding-left: 10px;
+     position: relative;
+     margin-left: 10px;
+ }
+ 
+ .searchPath span:before {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: -20px;
+     border: 10px solid #ccc;
+     border-color: transparent transparent transparent #ccc;
+     display: inline-block;
+ }
+ 
+ .searchPath span:nth-of-type(1) {
+     background-color: #c6c6c6;
+ }
+ 
+ .table {
+     margin: 0 auto;
+     width: 96%;
+     background-color: #fff;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     padding: 10px;
+ }
+ 
+ .table p {
+     margin: 10px auto;
+     display: block;
+     text-align: center;
+     overflow: hidden;
+     line-height: 30px;
+ }
+ 
+ .table>p>label {
+     color: #1D968B;
+     font-weight: bold;
+     float: left;
+     font-size: 1.2rem;
+ }
+ 
+ .table>p>input {
+     float: right;
+     border-radius: 4px;
+     height: 30px;
+     padding-left: 5px;
+ }
+ 
+
+ 
+ .infoContent {
+     margin: 0 auto;
+     width: 96%;
+     background-color: #fff;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+ }
+ 
+ .infoContent .infoTitle {
+     background-color: #fafafa;
+     height: 40px;
+     line-height: 40px;
+     border-radius: 5px;
+     font-size: 1.2rem;
+     padding-left: 10px;
+}
+.container li {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ededed;
+    padding: 0 10px;
+}
+.container li span:nth-of-type(1){
+    float: left
+}
+.container li span:nth-of-type(2){
+    float: right
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
