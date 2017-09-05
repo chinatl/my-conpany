@@ -6,7 +6,7 @@
             <i class="fa fa-calendar" aria-hidden="true"></i>
             <span>保单</span>
         </router-link>
-        <router-link to='/paysearch'>
+        <router-link to='/payhome'>
             <i class="fa fa-blind" aria-hidden="true"></i>
             <span>理赔</span>
         </router-link>

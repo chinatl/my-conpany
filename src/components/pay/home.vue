@@ -44,7 +44,9 @@
            <ul class="container">
                <li>
                    <span>分保单号</span>
-                   <span>2017110000818405002581</span>
+                   <span>
+                       <router-link to='payhome/homeinfo'>2017110000818405002581</router-link>
+                   </span>
                </li>
                <li>
                    <span>结算给付金额</span>
@@ -58,28 +60,30 @@
                    <span>合同终止日期</span>
                    <span>-</span>
                </li>
-               <li>
-                   <span>结案日期</span>
-                   <span>2016-06-03</span>
-               </li>
            </ul>
         </div>
         </mt-tab-container-item>
         <mt-tab-container-item id="2">
+        <div class="table">
+            <p><label for="">员工姓名：</label><input type="text"  placeholder='请正确填写'></p>
+            <p><label for="">员工工号：</label><input type="text"  placeholder='请正确填写'></p>
+            <p><label for="">证件类型：</label><input type="text"  placeholder='请正确填写'></p>
+            <p><label for="">证件号码：</label><input type="number"  placeholder='请正确填写'></p>
+        </div>
+        <input type="button" value="查询" class='seachBtn' /> 
+        <input type="button" value="重置" class='seachBtn resetBtn'/>     
+
          <div class="infoContent"> 
-           <h3 class='infoTitle'>连带被保险人信息</h3>
+           <h3 class='infoTitle'>员工列表</h3>
+            
            <ul class="container">
                <li>
-                   <span>姓名</span>
+                   <span>员工工号</span>
+                   <span>3</span>
+               </li>
+               <li>
+                   <span>员工姓名</span>
                    <span>王新华</span>
-               </li>
-               <li>
-                   <span>性别</span>
-                   <span>女</span>
-               </li>
-               <li>
-                   <span>出生日期</span>
-                   <span>1965-12-07</span>
                </li>
                <li>
                    <span>证件类型</span>
@@ -87,56 +91,28 @@
                </li>
                <li>
                    <span>证件号码</span>
-                   <span>34128119970413002x</span>
-               </li>
-               <li>
-                   <span>联系电话</span>
-                   <span>-</span>
-               </li>
-               <li>
-                   <span>邮箱地址</span>
-                   <span>-</span>
-               </li>
-               <li>
-                   <span>与员工关系</span>
-                   <span>子女</span>
-               </li>
-               <li>
-                   <span>账户所有人姓名</span>
-                   <span>吴宏伟</span>
-               </li>
-               <li>
-                   <span>银行名称</span>
-                   <span>上海银行</span>
-               </li>
-               <li>
-                   <span>账户证件类型</span>
-                   <span>身份证</span>
-               </li>
-               <li>
-                   <span>账户证件号码</span>
                    <span>341281196512071132</span>
                </li>
                <li>
-                   <span>银行账号</span>
-                   <span>600010001511001531</span>
+                   <span>企业名称</span>
+                   <span>小熊猫有限公司</span>
                </li>
            </ul>
         </div>
           <div class="infoContent"> 
-           <h3 class='infoTitle'>保险责任信息</h3>
+           <h3 class='infoTitle'>团单信息列表</h3>
            <ul class="container">
                <li>
-                   <span>保险合同号</span>
-                   <span>2017110000818405002581</span>
+                   <span>主保单号</span>
+                   <span>2014110238d87700008079</span>
                </li>
                <li>
-                   <span>产品名称</span>
+                   <span>主险产品名称</span>
                    <span>国寿团体补充医疗保险(A型)</span>
                </li>
                <li>
-                   <span>保额</span>
-                   <span>20000.0</span>
+                   <span>企业名称</span>
+                   <span>小熊猫有限公司</span>
                </li>
                <li>
                    <span>生效日期</span>
@@ -147,8 +123,12 @@
                    <span>2018-03-17</span>
                </li>
                <li>
-                   <span>人员组别</span>
-                   <span>28天至23天子女</span>
+                   <span>管理机构号</span>
+                   <span>110238</span>
+               </li>
+               <li>
+                   <span>备注</span>
+                   <span>-</span>
                </li>
            </ul>
         </div>

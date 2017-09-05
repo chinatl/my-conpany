@@ -15,6 +15,5 @@ export default {
             var c = number.slice(7);
             return a + '-'+ b+ '-' +c
         }
-         
     }
 }

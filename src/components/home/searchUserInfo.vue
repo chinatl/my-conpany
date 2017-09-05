@@ -1,6 +1,10 @@
 <template>
     <div class='layout'>
-    <mt-header title="保单信息查询"></mt-header>
+    <mt-header title="保单信息查询">
+         <router-link to="/tableinfo/searchinfo" slot="left">
+            <mt-button icon="back"></mt-button>
+        </router-link>
+    </mt-header>
     <div class="searchPath">
         <span>保单信息查询</span>
     </div>
@@ -98,7 +102,7 @@
                    <input type="button" value="理赔查询" class='seachBtn' @click='goRoute'> 
                </li>
                <li>
-                   <input type="button" value="保全查询" class='seachBtn'> 
+                   <input type="button" value="保全查询" class='seachBtn' @click='goSave'> 
                </li>
            </ul>
         </div>
@@ -216,7 +220,12 @@
         methods: {
             goRoute(){
                 localStorage.setItem('paysearch','1')
-                this.$router.push({path:'/paysearch'});
+                this.$router.push({path:'/payhome'});
+            },
+             goSave() {
+                this.$router.push({
+                    path: '/saveinfo'
+                });
             }
         }
 
@@ -251,5 +260,8 @@
     }
     .table {
         margin-top: 10px;
+    }
+    a:-webkit-any-link {
+        color: #fff
     }
 </style>

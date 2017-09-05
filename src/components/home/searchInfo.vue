@@ -1,6 +1,11 @@
 <template>
     <div class='layout'>
-    <mt-header title="保单信息查询"></mt-header>
+    <mt-header title="保单信息查询">
+        <router-link to="/" slot="left">
+    <mt-button icon="back"></mt-button>
+  </router-link>
+  <mt-button icon="more" slot="right"></mt-button>
+    </mt-header>
     <div class="searchPath">
         <span>保单信息查询</span>
         <span>保单信息</span>
@@ -69,6 +74,8 @@
                    <span>终止日期</span>
                    <span>2018-03-17</span>
                </li>
+               <li><input type="button" value="理赔查询" class='seachBtn' @click='goRoute'></li>
+               <li><input type="button" value="保全查询" class='seachBtn' @click='goSave'></li>
            </ul>
         </div>
         </mt-tab-container-item>
@@ -90,8 +97,8 @@
                     </li>
                     <li>
                         <span>员工姓名</span>
-                        <span style='color:blue'>
-                        <router-link to='/tableinfo/userdesc'>王新华</router-link>
+                        <span>
+                            <router-link to='/tableinfo/searchinfo/userdesc'>王新华</router-link>
                         </span>
                     </li>
                     <li>
@@ -116,19 +123,31 @@
             return {
                 selected: '1',
                 data: [{
-                        number: '2017110000818405002581',
-                        product_name: '国寿绿洲团体意外',
-                        company_name: '小熊猫有限公司',
-                        start_time: '2017-03-18',
-                        end_time: '2018-03-17',
-                        manager_num: '110000',
-                        remark: '1234',
-                    },
-                ]
+                    number: '2017110000818405002581',
+                    product_name: '国寿绿洲团体意外',
+                    company_name: '小熊猫有限公司',
+                    start_time: '2017-03-18',
+                    end_time: '2018-03-17',
+                    manager_num: '110000',
+                    remark: '1234',
+                }, ]
             }
         },
         created() {
 
+        },
+        methods: {
+            goRoute() {
+                localStorage.setItem('paysearch', '1')
+                this.$router.push({
+                    path: '/payhome'
+                });
+            },
+            goSave() {
+                this.$router.push({
+                    path: '/saveinfo'
+                });
+            }
         }
 
     }
@@ -150,17 +169,22 @@
     .msgTitle {
         color: #1D9F49;
     }
+    
     .infoContent {
         margin-top: 10px;
     }
+    
     .mint-navbar a.mint-tab-item.is-selected {
         border-bottom: 3px solid #1D9F49;
         color: #1D9F49;
     }
+    
     .mint-navbar-span {
         font-size: 1.2rem;
     }
+    
     .table {
         margin-top: 10px;
     }
+
 </style>

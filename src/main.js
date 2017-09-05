@@ -2,25 +2,28 @@ import Vue from 'vue';
 import App from './App.vue';
 import vueRouter from 'vue-router';
 Vue.use(vueRouter);
-import tableInfo from './components/tableInfo.vue';
-import userInfo from './components/userInfo.vue';
-import userDesc from './components/userDesc.vue';
-import paySearch from './components/paySearch.vue';
+import home from './components/home/search.vue'
+import searchInfo from './components/home/searchInfo.vue'
+import searchUserInfo from './components/home/searchUserInfo.vue'
+import payHome from './components/pay/home.vue'
+import homeInfo from './components/pay/homeInfo.vue'
+import homeList from './components/pay/homeList.vue'
 import saveInfo from './components/saveInfo.vue';
-import foud from './components/foud.vue';
-
+import foud from './components/foud.vue'
 // 3.0.2 定义路由规则
 var router1 = new vueRouter({
 	routes:[
 		{path:'/',redirect:'/tableinfo'}, 
-		{path:'/tableinfo',component:tableInfo}, 
-		{path:'/tableinfo/userinfo',component:userInfo}, 
-		{path:'/tableinfo/userdesc',component:userDesc}, 
-		{path:'/paysearch',component:paySearch}, 
+		{path:'/tableinfo',component:home}, 
+		{path:'/tableinfo/searchinfo',component:searchInfo}, 
+		{path:'/tableinfo/searchinfo/userdesc',component:searchUserInfo}, 
+		{path:'/payhome',component:payHome}, 
+		{path:'/payhome/homelist',component:homeList}, 
+		{path:'/payhome/homeinfo',component:homeInfo}, 
 		{path:'/saveinfo',component:saveInfo}, 
 		{path:'/foud',component:foud}, 
 	]
-	});
+});
 
 
 // 4.0 注册mint-ui

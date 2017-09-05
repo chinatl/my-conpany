@@ -14,7 +14,7 @@
            <h3 class='infoTitle'>保单基本信息</h3>
            <ul class="container">
                <li>
-                  <router-link to='/tableinfo/userinfo'>
+                  <router-link to='/tableinfo/searchinfo'>
                       <span>主包单号</span>
                        <span>2017110000818405002581</span>
                   </router-link>
@@ -48,11 +48,10 @@
            
         </div>
         <input type="button" value="理赔查询" class='seachBtn' @click='goRoute'> 
-        <input type="button" value="保全查询" class='seachBtn'>     
+        <input type="button" value="保全查询" class='seachBtn' @click='goSave'>     
 
     </div>
 </template>
-
 
 <script>
     export default {
@@ -101,9 +100,16 @@
 
         },
         methods: {
-            goRoute(){
-                localStorage.setItem('paysearch','1')
-                this.$router.push({path:'/paysearch'});
+            goRoute() {
+                localStorage.setItem('paysearch', '1')
+                this.$router.push({
+                    path: '/payhome'
+                });
+            },
+            goSave() {
+                this.$router.push({
+                    path: '/saveinfo'
+                });
             }
         }
 
@@ -113,5 +119,6 @@
 
 
 <style scoped>
-   
+
+
 </style>
