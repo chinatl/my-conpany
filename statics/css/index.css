@@ -1,6 +1,7 @@
  .searchPath {
      height: 30px;
  }
+ 
  .searchPath span {
      display: inline-block;
      height: 20px;
@@ -57,8 +58,6 @@
      padding-left: 5px;
  }
  
-
- 
  .infoContent {
      margin: 0 auto;
      width: 96%;
@@ -74,33 +73,100 @@
      border-radius: 5px;
      font-size: 1.2rem;
      padding-left: 10px;
-}
-.container li {
-    height: 40px;
-    line-height: 40px;
-    border: 1px solid #ededed;
-    padding: 0 10px;
-}
-.container li span:nth-of-type(1){
-    float: left
-}
-.container li span:nth-of-type(2){
-    float: right
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ }
+ 
+ .container li {
+     height: 40px;
+     line-height: 40px;
+     border: 1px solid #ededed;
+     padding: 0 10px;
+ }
+ 
+ .container li span:nth-of-type(1) {
+     float: left
+ }
+ 
+ .container li span:nth-of-type(2) {
+     float: right
+ }
+ 
+ .detailfoud {
+     position: fixed;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     background-color: rgba(0, 0, 0, .5);
+ }
+ 
+ .detailfoud_box {
+     width: 94%;
+     position: absolute;
+     top: 20%;
+     left: 50%;
+     transform: translate(-50%, 0);
+     background-color: #fff;
+     padding-bottom: 6px;
+ }
+ 
+ .detailfoud_box .title {
+     height: 40px;
+     background-color: #009B62;
+     line-height: 40px;
+     color: #fff;
+     position: relative;
+     padding-left: 10px;
+     font-size: 1.2rem;
+     margin-bottom: 5px;
+ }
+ 
+ .detailfoud_box .closeBox {
+     position: absolute;
+     top: 12px;
+     right: 10px;
+     font-size: 1.5rem
+ }
+ 
+ .detailfoud_box ul {
+     background-color: #fff;
+     width: 94%;
+     margin: 0 auto;
+ }
+ 
+ .detailfoud_box ul li {
+     width: 100%;
+     height: 30px;
+     line-height: 30px;
+     padding-left: 6px;
+     overflow: hidden;
+ }
+ 
+ .detailfoud_box ul li:nth-of-type(even) {
+     background-color: #f8f8f8;
+ }
+ 
+ .detailfoud_box ul li span {
+     display: inline-block;
+     float: left;
+     text-align: center;
+ }
+ 
+ .detailfoud_box ul li span:nth-of-type(1) {
+     width: 5%;
+ }
+ 
+ .detailfoud_box ul li span:nth-of-type(2) {
+     width: 30%;
+ }
+ 
+ .detailfoud_box ul li span:nth-of-type(3) {
+     width: 20%;
+ }
+ 
+ .detailfoud_box ul li span:nth-of-type(4) {
+     width: 20%;
+ }
+ 
+ .detailfoud_box ul li span:nth-of-type(5) {
+     width: 25%;
+ }
